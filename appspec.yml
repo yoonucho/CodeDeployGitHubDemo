@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+    - source: \index.html
+      destination: /home/ubuntu/build
+hooks:
+    BeforeInstall:
+        - location: \before-install.bat
+          timeout: 900
